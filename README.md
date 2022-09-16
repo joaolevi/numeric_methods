@@ -1,2 +1,2 @@
-# numeric_methods
+# Numeric Methods
 This repo is to save some algorithms of numeric methods. 
