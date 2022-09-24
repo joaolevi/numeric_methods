@@ -99,8 +99,8 @@ def question_4_letter_c(digits_to_truncate, digits_to_round):
         i_fatorial = 1
         for j in range(1, i+1):
             i_fatorial = i_fatorial*i
-        aux_trunc = ((-1)**i*5**i)/i_fatorial
-        result_round = result_round + round(aux_trunc, digits_to_round)
+        aux_round = ((-1)**i*5**i)/i_fatorial
+        result_round = result_round + round(aux_round, digits_to_round)
 
     abs_error_trunc, relat_error_trunc = error_calculator(exactly_result, result_truncate)
     abs_error_round, relat_error_round = error_calculator(exactly_result, result_round)
@@ -108,7 +108,3 @@ def question_4_letter_c(digits_to_truncate, digits_to_round):
     print('Letter c)')
     print(f'{digits_to_truncate} digits truncate: Absolute error: Absolute error: {abs_error_trunc}, Relative error: {relat_error_trunc}')
     print(f'{digits_to_round} digits round: Absolute error: {abs_error_round}, Relative error: {relat_error_round}')
-
-question_4_letter_a(3, 3)
-question_4_letter_b(3, 3)
-question_4_letter_c(3, 3)
